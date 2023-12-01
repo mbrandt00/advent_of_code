@@ -44,11 +44,10 @@ for line in lines:
             for number, digit in mappings.items():
                 if line[i : i + len(number)] == number:
                     nums.append(str(digit))
-                    i += len(number)
+                    i += len(number) - 1
                     break
             else:
                 i += 1
-    # print(nums)
     if len(nums) == 1:
         nums.append(nums[0])
     else:
