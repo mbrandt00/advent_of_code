@@ -98,7 +98,6 @@ What is the lowest location number that corresponds to any of the initial seed n
 
 """
 import os
-from collections import defaultdict
 from typing import List
 
 file_path = os.path.join("5", "source.txt")
