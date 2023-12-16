@@ -103,8 +103,16 @@ for time, distance in mappings.items():
         if test_value(i, time) > distance:
             ways[time_counter] += 1
     time_counter += 1
-print(ways)
+# print(ways)
 total = 1
 for num in ways:
     total *= num
-print(total)
+# print(total)
+
+kearning_time = int("".join(f[0].split(":")[1].split()))
+kearning_distance = int("".join(f[1].split(":")[1].split()))
+counter = 0
+for i in range(kearning_time):
+    if test_value(i, kearning_time) > kearning_distance:
+        counter += 1
+print(counter)
